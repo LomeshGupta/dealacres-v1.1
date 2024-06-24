@@ -21,8 +21,8 @@ const FlyoutMenuSections = ({ sections }) => {
           <hr />
           <ul className="mt-2">
             {section.items.map((item, i) => (
-              <Link href={item.captionPath ? item.captionPath : "/"}>
-                <li key={i} className="text-sm cursor-pointer">
+              <Link key={i} href={item.captionPath ? item.captionPath : "/"}>
+                <li className="text-sm cursor-pointer">
                   {item.caption}
                 </li>
               </Link>
