@@ -4,9 +4,9 @@ export const buyerMenuContent = {
     {
       heading: "Popular Choice",
       items: [
-        { caption: "Under Construction", captionPath: "/all-property/" },
-        { caption: "Ready to Move", captionPath: "/all-property/" },
-        { caption: "Newly Launched", captionPath: "/all-property/" },
+        { caption: "Under Construction", captionPath: "/all-property/category?Under-Construction" },
+        { caption: "Ready to Move", captionPath: "/all-property/category?Ready-to-Move" },
+        { caption: "Newly Launched", captionPath: "/all-property/category?Newly-Launched" },
       ],
     },
     {
@@ -14,35 +14,35 @@ export const buyerMenuContent = {
       items: [
         {
           caption: "Flat for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?Flat-for-Sale",
         },
         {
           caption: "House for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?House-for-Sale",
         },
         {
           caption: "Villa for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?Villa-for-Sale",
         },
         {
           caption: "Plot for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?Plot-for-Sale",
         },
         {
           caption: "Commercial Space for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?Commercial-Space-for-Sale",
         },
         {
           caption: "Office Space for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?Office-Space-for-Sale",
         },
         {
           caption: "Shop for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?Shop-for-Sale",
         },
         {
           caption: "SCO Plots for Sale",
-          captionPath: "/all-property/",
+          captionPath: "/all-property/category?SCO-Plots-for-Sale",
         },
       ],
     },
@@ -50,42 +50,42 @@ export const buyerMenuContent = {
       heading: "Other Resources",
       items: [
         {
-            "caption": "Find an Agents",
-            "captionPath": "/agent/"
+          caption: "Find an Agents",
+          captionPath: "/agent/",
         },
         {
-            "caption": "Articles For Buyers",
-            "captionPath": "/blog/"
+          caption: "Articles For Buyers",
+          captionPath: "/blog/",
         },
         {
-            "caption": "Real Estate News",
-            "captionPath": "/blog/"
+          caption: "Real Estate News",
+          captionPath: "/blog/",
         },
         {
-            "caption": "Buyer Manuals",
-            "captionPath": "/blog/"
+          caption: "Buyer Manuals",
+          captionPath: "/blog/",
         },
         {
-            "caption": "Home Interior Guides",
-            "captionPath": "/blog/"
+          caption: "Home Interior Guides",
+          captionPath: "/blog/",
         },
         {
-            "caption": "Policies (GST, RERA, PMAY)",
-            "captionPath": "/blog/"
+          caption: "Policies (GST, RERA, PMAY)",
+          captionPath: "/blog/",
         },
         {
-            "caption": "Builders in India",
-            "captionPath": "/all-property/"
+          caption: "Builders in India",
+          captionPath: "/all-property/",
         },
         {
-            "caption": "Property Services",
-            "captionPath": "/all-property/"
+          caption: "Property Services",
+          captionPath: "/all-property/",
         },
         {
-            "caption": "Location Insights",
-            "captionPath": "/all-property/"
-        }
-    ]    
+          caption: "Location Insights",
+          captionPath: "/all-property/",
+        },
+      ],
     },
   ],
 };
@@ -95,33 +95,93 @@ export const tenantMenuContent = {
   sections: [
     {
       heading: "Popular Choice",
-      items: ["Unfurnished  Property", "Furnishned Property"],
+      items: [
+        {
+          caption: "Unfurnished Property",
+          captionPath: "/all-property/category?Unfurnished-Property",
+        },
+        {
+          caption: "Furnished Property",
+          captionPath: "/all-property/category?Furnished-Property",
+        },
+      ],
     },
     {
       heading: "Property Type",
       items: [
-        "Flat for Rent",
-        "House for Rent", //catergory wise property
-        "Villa for Rent",
-        "Plot for Rent",
-        "Commercial Space for Rent",
-        "Office Space for Rent",
-        "Shop for Rent",
-        "Warehouse/Godown for Rent",
+        {
+          caption: "Flat for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "House for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Villa for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Plot for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Commercial Space for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Office Space for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Shop for Rent",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Warehouse/Godown for Rent",
+          captionPath: "/all-property/",
+        },
       ],
     },
     {
       heading: "Other Resources",
       items: [
-        "Find an Agents",
-        "Articles For Tenants",
-        "Real Estate News",
-        "Tenants Manuals",
-        "Home Interior Guides",
-        "Policies (GST, RERA, PMAY)",
-        "Builders in India",
-        "Property Services",
-        "Location Insights",
+        {
+          caption: "Find an Agents",
+          captionPath: "/agent/",
+        },
+        {
+          caption: "Articles For Tenants",
+          captionPath: "/blog/",
+        },
+        {
+          caption: "Real Estate News",
+          captionPath: "/blog/",
+        },
+        {
+          caption: "Tenants Manuals",
+          captionPath: "/all-guides",
+        },
+        {
+          caption: "Home Interior Guides",
+          captionPath: "/all-guides",
+        },
+        {
+          caption: "Policies (GST, RERA, PMAY)",
+          captionPath: "/blog",
+        },
+        {
+          caption: "Builders in India",
+          captionPath: "/allDevelopers",
+        },
+        {
+          caption: "Property Services",
+          captionPath: "/allservice/",
+        },
+        {
+          caption: "Location Insights",
+          captionPath: "/localities/gurgaon",
+        },
       ],
     },
   ],
@@ -132,23 +192,73 @@ export const sellerMenuContent = {
   sections: [
     {
       heading: "My Home",
-      items: ["List Your Property", "My Dashboard"],
+      items: [
+        {
+          caption: "List Your Property",
+          captionPath: "/propertylisting",
+        },
+        {
+          caption: "My Dashboard",
+          captionPath: "#",
+        },
+      ],
     },
     {
       heading: "Selling with DA",
-      items: ["Find an Agents", "Why Deal Acres", "Packages ", "Sales Enquiry"],
+      items: [
+        {
+          caption: "Find an Agents",
+          captionPath: "/agent",
+        },
+        {
+          caption: "Why Deal Acres",
+          captionPath: "/about",
+        },
+        {
+          caption: "Packages",
+          captionPath: "#",
+        },
+        {
+          caption: "Sales Enquiry",
+          captionPath: "/contactus",
+        },
+      ],
     },
     {
       heading: "Other Resources",
       items: [
-        "Articles For Seller",
-        "Real Estate News",
-        "Seller  Manuals",
-        "Home Interior Guides",
-        "Policies (GST, RERA, PMAY)",
-        "Builders in India",
-        "Property Services",
-        "Location Insights",
+        {
+          caption: "Articles For Seller",
+          captionPath: "/blog", //categorywise
+        },
+        {
+          caption: "Real Estate News",
+          captionPath: "/blog/",   //categorywise
+        },
+        {
+          caption: "Seller Manuals",
+          captionPath: "/all-guides",
+        },
+        {
+          caption: "Home Interior Guides",
+          captionPath: "/all-guides/",
+        },
+        {
+          caption: "Policies (GST, RERA, PMAY)",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Builders in India",
+          captionPath: "/allDevelopers",
+        },
+        {
+          caption: "Property Services",
+          captionPath: "/allservice/",
+        },
+        {
+          caption: "Location Insights",
+          captionPath: "/localities/gurgaon",
+        },
       ],
     },
   ],
@@ -160,49 +270,133 @@ export const blogMenuContent = {
     {
       heading: "PROPERTY TRENDS",
       items: [
-        "Property Trend",
-        "NRI",
-        "Infrastructure",
-        "Construction",
-        "Housing Schems",
-        "Delhi NCR",
+        {
+          caption: "Property Trend",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "NRI",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Infrastructure",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Construction",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Housing Schems",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Delhi NCR",
+          captionPath: "/all-property/",
+        },
       ],
     },
     {
       heading: "LIFESTYLE",
       items: [
-        "Home Improvment",
-        "Gardening",
-        "Green Homes",
-        "Home Automation",
-        "Shopping Hubs",
-        "Pet House",
-        "Famous Monuments",
-        "Packers & Movers",
+        {
+          caption: "Home Improvement",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Gardening",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Green Homes",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Home Automation",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Shopping Hubs",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Pet House",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Famous Monuments",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Packers & Movers",
+          captionPath: "/all-property/",
+        },
       ],
     },
     {
       heading: "MUST KNOW",
       items: [
-        "Home Loan",
-        "Legal",
-        "Taxation",
-        "Personal Finance",
-        "Co workation",
-        "Retail and Hospitality",
-        "Citizen Services",
+        {
+          caption: "Home Loan",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Legal",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Taxation",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Personal Finance",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Co workation",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Retail and Hospitality",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Citizen Services",
+          captionPath: "/all-property/",
+        },
       ],
     },
     {
       heading: "Resources",
       items: [
-        "Buyer Manuals",
-        "Seller Manuals",
-        "Tenant Manuals",
-        "Real Estate News",
-        "RERA",
-        "GST",
-        "Smart Cities",
+        {
+          caption: "Buyer Manuals",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Seller Manuals",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Tenant Manuals",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Real Estate News",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "RERA",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "GST",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Smart Cities",
+          captionPath: "/all-property/",
+        },
       ],
     },
   ],
@@ -214,38 +408,101 @@ export const serviceMenuContent = {
     {
       heading: "Property Services",
       items: [
-        "Rent Agreement",
-        "Home Loan",
-        "Property Valuer",
-        "Legal Services",
-        "Chartered Accountant",
+        {
+          caption: "Rent Agreement",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Home Loan",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Property Valuer",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Legal Services",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Chartered Accountant",
+          captionPath: "/all-property/",
+        },
       ],
     },
     {
       heading: "Home Designing",
       items: [
-        "Electronic Good Dealers",
-        "Home Décor",
-        "Home Interior",
-        "Vastu Shastra",
-        "Furniture Dealer",
-        "Modular Kitchen",
-        "Construction Contractor",
+        {
+          caption: "Electronic Good Dealers",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Home Décor",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Home Interior",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Vastu Shastra",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Furniture Dealer",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Modular Kitchen",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Construction Contractor",
+          captionPath: "/all-property/",
+        },
       ],
     },
 
     {
       heading: "Value Added Services",
       items: [
-        "Packer & Movers",
-        "Pest Control",
-        "Solar Product Dealer",
-        "Carpenter",
-        "Plumbing Contractor",
-        "Security System Dealer",
-        "Sanitary Dealer",
-        "Painting Service",
-        "Flooring & Marble Dealer",
+        {
+          caption: "Packer & Movers",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Pest Control",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Solar Product Dealer",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Carpenter",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Plumbing Contractor",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Security System Dealer",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Sanitary Dealer",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Painting Service",
+          captionPath: "/all-property/",
+        },
+        {
+          caption: "Flooring & Marble Dealer",
+          captionPath: "/all-property/",
+        },
       ],
     },
   ],

@@ -1,11 +1,11 @@
-
+// pages/[id].jsx
 "use client";
 import { ComparePropertyProvider } from "@/context/ComparePropertyContext";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { usePathname, useSearchParams } from "next/navigation";
 
-// Import dynamic component with custom loading
-const WithCustomLoading = dynamic(() => import("./allProperty"), {
+const WithCustomLoading = dynamic(() => import("../allProperty"), {
   loading: () => (
     <div style={overlayStyle}>
       <div style={spinnerStyle}>
@@ -56,9 +56,11 @@ const svgStyle = {
 };
 
 const Page = () => {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   return (
     <ComparePropertyProvider>
-      <WithCustomLoading />
+      <WithCustomLoading category={searchParams} />
     </ComparePropertyProvider>
   );
 };

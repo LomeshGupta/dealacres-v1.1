@@ -10,30 +10,7 @@ import Services from "../Homepage/services/Services";
 
 import { useCompareProperty } from "@/context/ComparePropertyContext";
 
-const properties = [
-  {
-    id: 1,
-    imageUrl:
-      "https://media.istockphoto.com/id/1194529868/photo/gurugram-cyber-hub.jpg?s=612x612&w=0&k=20&c=5wt2JdYpRVBhebHxd0EssmnaK8eLWwuKabUqlDwpvAA=",
-    price: "Rs 70.6 L to 2.36 Cr",
-    name: "Signature Global City 93",
-    location: "Sector 93 Gurgaon",
-    size: "730 - 1530",
-    details: "3BHK, FLATS, RESIDENTIAL PROPERTIES",
-  },
-  {
-    id: 2,
-    imageUrl:
-      "https://media.istockphoto.com/id/1194529868/photo/gurugram-cyber-hub.jpg?s=612x612&w=0&k=20&c=5wt2JdYpRVBhebHxd0EssmnaK8eLWwuKabUqlDwpvAA=",
-    price: "Rs 70.6 L to 2.36 Cr",
-    name: "Signature Global City 93",
-    location: "Sector 93 Gurgaon",
-    size: "730 - 1530",
-    details: "3BHK, FLATS, RESIDENTIAL PROPERTIES",
-  },
-];
-
-const PropertyFlatList = () => {
+const PropertyFlatList = ({ properties }) => {
   const { compareProperties } = useCompareProperty();
 
   return (
@@ -74,13 +51,13 @@ const PropertyFlatList = () => {
       <div className="py-[2rem] flex flex-col space-y-3">
         {properties.map((property) => (
           <PropertyCard
-            key={property.id}
-            id={property.id}
+            key={property._id}
+            id={property._id}
             imageUrl={property.imageUrl}
-            price={property.price}
-            name={property.name}
+            price={property.mainContent.price}
+            name={property.mainContent.title}
             location={property.location}
-            size={property.size}
+            size={property.mainContent.projectSize?property.mainContent.overview.projectSize:'10'}
             details={property.details}
           />
         ))}

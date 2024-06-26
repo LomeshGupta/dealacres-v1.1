@@ -18,10 +18,10 @@ const Socialicons = () => {
 
   return (
     <div style={containerStyle}>
-      <Link href='#facebook' style={logostyle}><SiFacebook size={25} color='white'/></Link>
-      <Link href='https://www.instagram.com/dealacres/' style={logostyle}><SiInstagram size={25} color='white'/></Link>
+      <Link href='https://www.facebook.com/teamdealacres?mibextid=LQQJ4d' style={logostyle}><SiFacebook size={25} color='white'/></Link>
+      <Link href='https://www.instagram.com/dealacres?igsh=MWZlNjRrZTEzZDE4YQ==' style={logostyle}><SiInstagram size={25} color='white'/></Link>
       <Link href='https://twitter.com/DealAcres' style={logostyle}><SiTwitter size={25} color='white'/></Link>
-      <Link href='https://in.linkedin.com/company/deal-acres' style={logostyle}><SiLinkedin size={25} color='white'/></Link>
+      <Link href='https://www.linkedin.com/company/deal-acres/' style={logostyle}><SiLinkedin size={25} color='white'/></Link>
     </div>
   )
 }
